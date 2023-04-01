@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/tools.css">
+    <title>Tools | Deep-Rig</title>
+</head>
+<body>
+<header>
+    <h1>Deep Rig</h1>
+    <p>An Ocean Engineering Company Specialized in Manufacturing ROVs</p>
+</header>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="training.html">Training</a></li>
+        <li><a href="tools.html">Tools</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="credits.html">Credits</a></li>
+    </ul>
+</nav>
+<div id="main-content">
+    <h2 id="title">Tools</h2>
+    <!--Input-->
+    <div id="cost-calc">
+        <div id="calc">
+            <h3>Cost Calculator</h3>
+            <div id="button-section">
+                <label for="offshore">Offshore: </label><input type="checkbox" id="offshore">
+                <button type="button" id="calculate" onclick="calculate()">|-></button>
+            </div>
+            <label for="num-of-divers">Number of divers: </label><input type="number" min="0" id="num-of-divers">
+            <label for="depth">Depth: </label><input type="number" min="0" id="depth">
+            <label for="work-span">Time to complete (Days): </label><input type="number" min="0" id="work-span">
+        </div>
+        <!--Output-->
+        <div id="descriptions">
+            <p id="hourly"></p>
+            <p id="depth-pay"></p>
+            <p id="shifts"></p>
+        </div>
+
+        <div id="cost">
+            <h3>Results</h3>
+            <p id="total-depth"></p>
+            <p id="total+depth"></p>
+            <p id="total"></p>
+        </div>
+
+    </div>
+
+</div>
+<footer>All rights reserved. <a href="credits.html">Credits</a></footer>
+<script src="js/tools.js"></script>
+
+</body>
+</html>
